@@ -1,0 +1,51 @@
+### GET authors
+GET  http://localhost:8000/authors
+
+### GET articles
+GET  http://localhost:8000/articles
+
+### GET author by id
+GET  http://localhost:8000/authors/1
+
+### GET article by id
+GET  http://localhost:8000/articles/1
+
+### POST author
+POST http://localhost:8000/authors
+Content-Type: application/json
+
+{
+    "first_name": "Joanne"
+}
+
+### POST article
+POST http://localhost:8000/articles
+Content-Type: application/json
+
+{
+    "title": "Harry Potter",
+    "author_id": 2
+}
+
+### PUT author
+PUT http://localhost:8000/authors/1
+Content-Type: application/json
+
+{
+    "first_name": "Joanne Rowling"
+}
+
+### PUT article
+PUT http://localhost:8000/articles/1
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author_id": 1
+}
+
+### DELETE author
+DELETE http://localhost:8000/authors/1
+
+### DELETE article
+DELETE http://localhost:8000/articles/1
